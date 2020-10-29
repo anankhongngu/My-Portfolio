@@ -17,6 +17,8 @@
     --text-black: #333;
     --text-btn: #333;
     --icon-green: #333;
+    --icon-return-c: #fff;
+    --icon-return-b: #999;
  }
 
  [data-theme="dark"] {
@@ -29,6 +31,8 @@
     --text-black: #f2f2f2;
     --text-btn: #009688;
     --icon-green: #009688;
+    --icon-return-c: #394282;
+    --icon-return-b: #fff;
 }
 // end color
 html {
@@ -73,7 +77,7 @@ html, body {
     line-height: 1.5;
 }
 body {
-    max-width: 1600px;
+    // max-width: 1600px;
 }
 h1 {
     font-size: 36px;
@@ -392,6 +396,36 @@ input:checked + .slider-cb::before {
 }
 
 
+// return to top
+#return-to-top {
+    position: fixed;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    // display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    bottom: 20px;
+    right: 16px;
+    z-index: 99;
+}
+#return-to-top .fa-rocket {
+    background: var(--icon-return-b);
+    color: var(--icon-return-c);
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 0px 4px #fffafa17;
+}
 
 
 

@@ -20,6 +20,8 @@
   --text-black: #333;
   --text-btn: #333;
   --icon-green: #333;
+  --icon-return-c: #fff;
+  --icon-return-b: #999;
 }
 
 [data-theme="dark"] {
@@ -32,6 +34,8 @@
   --text-black: #f2f2f2;
   --text-btn: #009688;
   --icon-green: #009688;
+  --icon-return-c: #394282;
+  --icon-return-b: #fff;
 }
 
 html {
@@ -91,10 +95,6 @@ html, body {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   line-height: 1.5;
-}
-
-body {
-  max-width: 1600px;
 }
 
 h1 {
@@ -472,6 +472,33 @@ input:checked + .slider-cb::before {
 
 .slider-cb.round:before {
   border-radius: 34px;
+}
+
+#return-to-top {
+  position: fixed;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  -webkit-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  bottom: 20px;
+  right: 16px;
+  z-index: 99;
+}
+
+#return-to-top .fa-rocket {
+  background: var(--icon-return-b);
+  color: var(--icon-return-c);
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 42px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 1px 0px 4px #fffafa17;
+          box-shadow: 0px 1px 0px 4px #fffafa17;
 }
 
 @-webkit-keyframes animateleft {

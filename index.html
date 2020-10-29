@@ -214,5 +214,21 @@
 
 </div>
 
+
+<a href="javascript:" id="return-to-top" onclick="smoothscroll();return false;">
+    <!-- <img src="./image/backto.png" alt="Back to top"> -->
+    <i class="fa fa-rocket" aria-hidden="true"></i>
+</a>
+<script type="application/javascript">
+    function smoothscroll(){
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+            window.requestAnimationFrame(smoothscroll);
+            window.scrollTo (0,currentScroll - (currentScroll/5));
+        }
+    };
+
+        
+</script>
 </body>
 </html>
