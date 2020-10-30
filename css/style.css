@@ -473,7 +473,9 @@ input:checked + .slider-cb::before {
 .slider-cb.round:before {
   border-radius: 34px;
 }
-
+input[type="checkbox"] {
+    outline:none;
+}
 #return-to-top {
   position: fixed;
   display: block;
